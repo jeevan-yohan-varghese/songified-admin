@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+  padding:0;
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main_div{
   display: flex;
   flex-direction: column;
+}
+.appbar{
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  background-color: #760BFE;
+  color: #ffffff;
+  font-size: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   align-items: center;
+}
+.sign_in_div{
+  display: flex;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.sign_in_btn_container{
+  display: inline-flex;
+  padding: 8px 12px;
+  color: #444;
+  
+  border-radius: 5px;
+  box-shadow: 1px 2px rgba(0,0,0,0.16);
+  
+
+}
+.signInBtn{
+  background-color: #ffffff;
+  border: none;
+  color: #000000;
+  margin-left: 8px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.content_div{
+  padding: 36px 20px;
+  display: flex;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  
+}
+.content_div ul{
+  list-style-type: none;
+  width: 100%;
+}
+.comment_container{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  background-color: #F3F3F4;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.comment_container p{
+  margin-top:8px;
+}
+.song_id{
+  color:#760BFE;
+}
+.btn_container{
+  display: inline-flex;
+}
+.btn{
+  
+  outline: none;
+  border:none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 4px 12px;
+  border-radius: 4px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+.logout_btn{
+  color:#ffffff;
+  margin-left: auto;
+  background: none;
+  font-weight: 500;
+  padding: 0;
+  margin-top: 0;
+}
+.btn_verify{
+  background-color:#760BFE;
+ 
+}
+.btn_unverify{
+  color:#760BFE;
+  border:2px solid #d3d3d3;
+  background:none;
 }
