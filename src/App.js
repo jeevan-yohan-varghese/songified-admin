@@ -41,7 +41,7 @@ function App() {
 
   const loadComments = () => {
     
-    const apiUrl = "http://songified-backend.herokuapp.com/songInfo";
+    const apiUrl = "https://songified-backend.herokuapp.com/songInfo";
     
     fetch(apiUrl, {
       method: 'get',
@@ -57,7 +57,7 @@ function App() {
       });
   };
   const signIn = () => {
-    const signInUrl = "http://songified-backend.herokuapp.com/auth/login";
+    const signInUrl = "https://songified-backend.herokuapp.com/auth/login";
     signInWithPopup(auth, provider)
       .then((result) => {
         // This gives you a Google Access Token. You can use it to access the Google API.
@@ -116,7 +116,7 @@ function App() {
 
 
   const verifyInfo = (comId) => {
-    const verifyApiUrl = "http://songified-backend.herokuapp.com/songInfo/authenticate";
+    const verifyApiUrl = "https://songified-backend.herokuapp.com/songInfo/authenticate";
     
     //setAppState({ loading: true });
     const reqOptions = {
@@ -151,7 +151,7 @@ function App() {
 
   };
   const unVerifyInfo = (id) => {
-    const unverifyApiUrl = "http://songified-backend.herokuapp.com/songInfo/deauthenticate";
+    const unverifyApiUrl = "https://songified-backend.herokuapp.com/songInfo/deauthenticate";
     setAppState({ loading: true });
     fetch(unverifyApiUrl, {
       method: 'post',
