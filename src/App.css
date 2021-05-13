@@ -101,3 +101,13 @@
   border:2px solid #d3d3d3;
   background:none;
 }
+
+@media screen and (max-width: 750px) {
+  .content_div ul{
+    text-align: center;
+  }
+  .comment_container{
+    width: 100%;
+    text-align: start;
+  }
+}
