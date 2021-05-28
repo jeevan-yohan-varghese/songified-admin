@@ -11,8 +11,8 @@ const List = (props) => {
                     <li key={comment._id}>
                         <div className='comment_container'>
                             <p className="user_name">Posted by : {comment.name}</p>
-                            <p className="song_id">Song ID :#{comment.songId}</p>
-                            <p className="comment_detail">{comment.detail}</p>
+                            <p className="song_id">#{comment.songId} {comment.detail}</p>
+                            <p className="comment_detail">{comment.songName}</p>
                             <div class="btn_container">
 
 
